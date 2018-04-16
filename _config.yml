@@ -78,7 +78,10 @@ theme: alisson-blog
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/alissonjr/alissonjr.github.io.git
+  name: Alisson
+  email: alisson.coj@hotmail.com
 
 node_sass:
   outputStyle: nested
