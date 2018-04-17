@@ -80,6 +80,7 @@ theme: alisson-blog
 deploy:
   type: git
   repo: https://github.com/alissonjr/alissonjr.github.io.git
+  branch: gh-pages
   name: Alisson
   email: alisson.coj@hotmail.com
 
