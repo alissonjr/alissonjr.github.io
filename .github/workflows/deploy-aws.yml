@@ -1,0 +1,35 @@
+name: Deploy AWS
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: deploy-aws
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::758364616992:role/github-deploy-alissonjr-com
+          aws-region: us-east-1
+
+      - name: Upload to S3
+        run: aws s3 sync . s3://alissonjr-com-site --delete --exclude ".git/*" --exclude ".github/*" --exclude "sass/*"
+
+      - name: Invalidate CloudFront cache
+        run: aws cloudfront create-invalidation --distribution-id E1UW667JNH5XOS --paths "/*"
