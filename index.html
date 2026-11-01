@@ -1,76 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alisson Developer Blog</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alisson Jr</title>
+  <meta name="description" content="Tech Lead e desenvolvedor sênior com 10 anos de experiência em engenharia de software, arquitetura cloud-native e produtos SaaS de alta performance.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://alissonjr.com/">
+  <meta property="og:title" content="Alisson Jr">
+  <meta property="og:description" content="Tech Lead e desenvolvedor sênior com 10 anos de experiência em engenharia de software.">
+  <meta property="og:url" content="https://alissonjr.com/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="/style.css">
 </head>
-    <body class=" animated fadeIn">
-        <section class="content">
-    <div class="content-box">
-        <header></header>
-        <div class="screen animated slideInLeft">
-    <div class="logo animated slideInRight">Alisson.blog()</div>
-    <div class="menu animated slideInLeft">
-        <ul>
-            <li>
-                <a href="">HOME</a>
-            </li>
-            <li>
-                <a href="">ABOUT</a>
-            </li>
-            <li>
-                <a href="">CATEGORIES</a>
-            </li>
-            <li>
-                <a href="">POSTS</a>
-            </li>
+<body>
+
+  <header class="topo">
+    <a class="assinatura" href="/">Alisson Jr</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="abertura" aria-labelledby="nome">
+      <h1 class="nome" id="nome"><span>Alisson</span><span>Jr</span></h1>
+      <p class="resumo">Tech Lead e desenvolvedor sênior. Há 10 anos construindo produtos SaaS na nuvem, com foco em performance e escala.</p>
+      <p class="local">Baixo Guandu, Espírito Santo</p>
+    </section>
+
+    <section class="secao" id="sobre" aria-labelledby="t-sobre">
+      <h2 id="t-sobre">Sobre</h2>
+      <div>
+        <p>Tech Lead e Desenvolvedor Sênior com 10 anos de experiência em engenharia de software, liderando squads ágeis, definindo arquiteturas cloud-native e entregando produtos SaaS escaláveis de alta performance.</p>
+        <p>Atuação em ecossistemas com 5k+ requisições por segundo, microsserviços de ultrabaixa latência (1 a 20 ms), integrações complexas com ERPs, e-commerces e plataformas de pagamento.</p>
+        <p>Grande vivência em ambientes AWS, desenvolvimento com uso de containers (Docker/Cognito/ECS), observabilidade (Grafana, Kibana, NewRelic, CloudWatch) e práticas FinOps (redução de custos em cloud de até 30% com políticas de autoscaling, saving plans e event driven design).</p>
+        <p>Atuação hands-on em desenvolvimento de APIs, microsserviços e integrações, com foco em performance e escalabilidade.</p>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos" aria-labelledby="t-projetos">
+      <h2 id="t-projetos">Projetos</h2>
+      <ul class="lista">
+        <li>
+          <div class="linha">
+            <a class="titulo" href="https://librax.online">Librax</a>
+            <span class="ano">2026</span>
+          </div>
+          <p>App para aprender Libras com reconhecimento de sinais pela câmera.</p>
+        </li>
+        <li>
+          <div class="linha">
+            <a class="titulo" href="https://github.com/alissonjr/dev-metrics">dev-metrics</a>
+            <span class="ano">2026</span>
+          </div>
+          <p>Plataforma self-hosted de métricas de engenharia (DORA, cycle time, throughput). Coleta dados do GitLab e do Jira, guarda no PostgreSQL e mostra no Grafana, tudo em Docker Compose.</p>
+        </li>
+        <li>
+          <div class="linha">
+            <a class="titulo" href="https://github.com/alissonjr/brasa">Brasa</a>
+            <span class="ano">2026</span>
+          </div>
+          <p>Dungeon crawler de fantasia low-poly que roda no navegador, feito com Babylon.js e TypeScript. Protótipo em desenvolvimento.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao" id="contato" aria-labelledby="t-contato">
+      <h2 id="t-contato">Contato</h2>
+      <div>
+        <p class="whatsapp"><a href="https://wa.me/5527996240994">Conversar no WhatsApp</a></p>
+        <ul class="contatos">
+          <li><a href="https://github.com/alissonjr">github.com/alissonjr</a></li>
         </ul>
-    </div>
-    <div class="categories animated slideInRight">
-        <ul>
-                <li>
-                    <a href="">Code</a>
-                </li>
-                <li>
-                    <a href="">Agility</a>
-                </li>
-                <li>
-                    <a href="">Productivity</a>
-                </li>
-                <li>
-                    <a href="">SEO</a>
-                </li>
-        </ul>
-    </div>
-</div>
-        <div class="last-articles m-top-20 animated slideInRight">
-            <h2 class="title">Last Posts:</h2>
-            <ul class="articles">
-                
-                <li>
-                    <h3 class="title">
-                        Hello World
-                    </h3>
-                    <p class="content">
-                        12/04/2018
-                    </p>
-                    <a class="link" href="2018/04/12/hello-world/">Ler tudo</a>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-</section>
-        <footer>
-    <p class="copy">
-        &copy Alisson Costa de Oliveira Júnior. All rights reserved. Made with 
-        <span class="heart">❤</span> 
-        in Baixo Guandu - ES.
-    </p>
-</footer>
-    </body>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Alisson Costa de Oliveira Júnior, 2026</p>
+  </footer>
+
+</body>
 </html>
